@@ -229,7 +229,7 @@ class Snackbar extends React.Component<Props, State> {
             this.props.textOnly ? <Text style={[styles.content, { marginRight: action ? 0 : 16 }]}>
               {children}
             </Text> :
-              <View style={[styles.content, { marginRight: action ? 0 : 16 }]}>
+              <View style={[styles.viewContent, { marginRight: action ? 0 : 16 }]}>
                 {children}
               </View>
           }
@@ -271,6 +271,12 @@ const styles = StyleSheet.create({
   },
   content: {
     color: white,
+    marginLeft: 16,
+    marginVertical: 14,
+    flexWrap: 'wrap',
+    flex: 1,
+  },
+  viewContent: {
     marginLeft: 16,
     marginVertical: 14,
     flexWrap: 'wrap',
