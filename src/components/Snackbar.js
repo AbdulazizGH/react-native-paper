@@ -277,7 +277,6 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   viewContent: {
-    marginLeft: 16,
     marginVertical: 14,
     flexWrap: 'wrap',
     flex: 1,
