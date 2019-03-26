@@ -225,9 +225,14 @@ class Snackbar extends React.Component<Props, State> {
             style,
           ]}
         >
-          <Text style={[styles.content, { marginRight: action ? 0 : 16 }]}>
-            {children}
-          </Text>
+          {
+            this.props.textOnly ? <Text style={[styles.content, { marginRight: action ? 0 : 16 }]}>
+              {children}
+            </Text> :
+              <View style={[styles.content, { marginRight: action ? 0 : 16 }]}>
+
+              </View>
+          }
           {action ? (
             <Button
               accessibilityLabel={action.accessibilityLabel}
