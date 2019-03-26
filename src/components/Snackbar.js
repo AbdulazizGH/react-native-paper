@@ -1,7 +1,7 @@
 /* @flow */
 
 import * as React from 'react';
-import { StyleSheet, Animated, SafeAreaView } from 'react-native';
+import { StyleSheet, Animated, SafeAreaView, View} from 'react-native';
 
 import Button from './Button';
 import Surface from './Surface';
@@ -230,7 +230,7 @@ class Snackbar extends React.Component<Props, State> {
               {children}
             </Text> :
               <View style={[styles.content, { marginRight: action ? 0 : 16 }]}>
-
+                {children}
               </View>
           }
           {action ? (
